@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-sm-6 col-md-6">
+        <label class="col-sm-4 col-md-4 text-right">日期联动：</label>
+        <div class='col-sm-4 col-md-4'>
+            <div class='input-group date'>
+                <input type='text' class="form-control" id="createStartDate"
+                   ng-model="model.startDate"
+                   date-time-picker="YYYY-MM-DD"
+                   dialog-ctrl="dialogCtrlStart"
+                   linked-pickers="{createEndDate: 'minDate'}">
+            </div>
+        </div>
+        <div class='col-sm-4 col-md-4'>
+            <div class='input-group date' id='datetimepicker1'>
+                <input ype='text' class="form-control" id="createEndDate"
+                       ng-model="model.endTime"
+                       date-time-picker="YYYY-MM-DD"
+                       dialog-ctrl="dialogCtrlEnd"
+                       linked-pickers="{createStartDate: 'maxDate'}">
+            </div>
+        </div>
+    </div>
+</div>
+

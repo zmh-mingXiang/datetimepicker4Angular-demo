@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>日期时间选择器</title>
+    <!-- Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap-datetimepicker/bootstrap-datetimepicker.css" rel="stylesheet">
+    <script src="/jquery/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="layout">
+    <div id="main">
+        <div class="content" id="dateTimePickerDemo" ng-controller="dateTimePickerDemoCtrl">
+            <section class="well">
+                <ul>
+                    <li><p>依赖: angular 、jQuery、 bootstrap-datetimepicker-4.17.43</p></li>
+                    <li><p>参考: <a href="http://eonasdan.github.io/bootstrap-datetimepicker" target="_blank">http://eonasdan.github.io/bootstrap-datetimepicker</a></p></li>
+                </ul>
+            </section>
+
+            <br/>
+            <br/>
+
+            <!-- 单选日期 -->
+            <div ng-include="'/views/include/date.html'"></div>
+
+            <br/>
+            <br/>
+            <!-- 日期时间 -->
+            <div ng-include="'/views/include/date-time.html'"></div>
+
+            <br/>
+            <br/>
+            <!-- 最小，最大日期限制 -->
+           <div ng-include="'/views/include/limit-time.html'"></div>
+
+            <br/>
+            <br/>
+            <!-- 日期联动选择 -->
+            <div ng-include="'/views/include/linked-pickers.html'"></div>
+
+            <br/>
+            <br/>
+            <!-- 月份选择 -->
+            <div ng-include="'/views/include/months.html'"></div>
+
+            <br/>
+            <br/>
+            <!-- api -->
+            <div ng-include="'/views/include/api.html'"></div>
+
+        </div>
+    </div>
+</div>
+
+<script src="/bootstrap/js/bootstrap.js"></script>
+<script src="/main.bundle.js" charset="utf-8"></script>
+</body>
+</html>

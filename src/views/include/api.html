@@ -1,0 +1,93 @@
+<section class="markdown api-container" id="api">
+    <h2 id="API"><span>API</span><a href="#API" class="anchor">#</a></h2>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>参数</th>
+            <th>说明</th>
+            <th>类型</th>
+            <th>默认值</th>
+            <th>是否必填</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>ng-model</td>
+            <td>返回的结果</td>
+            <td>Date</td>
+            <td>-</td>
+            <td class="emphasize">是</td>
+        </tr>
+        <tr>
+            <td>dateTimePicker</td>
+            <td>
+                初始化指令及格式化;</br>
+                可选YYYY-MM-DD、YYYY/MM/DD等</br>
+                当配置含有时分（如YYYY-MM-DD HH:mm）时，可选择时间
+            </td>
+            <td>String</td>
+            <td>YYYY-MM-DD</td>
+            <td>否</td>
+        </tr>
+
+        <tr>
+            <td>dialogCtrl</td>
+            <td>
+                后面调用触发或清空方法</br>
+                show():触发日期时间；</br>
+                clear():清空日期时间；
+            </td>
+            <td>object</td>
+            <td>{}</td>
+            <td>否</td>
+        </tr>
+        <tr>
+            <td>minDate</td>
+            <td>限制所能选择的最小时间</td>
+            <td>date, moment, string</td>
+            <td>-</td>
+            <td>否</td>
+        </tr>
+        <tr>
+            <td>maxDate</td>
+            <td>限制所能选择的最大时间</td>
+            <td>date, moment, string</td>
+            <td>-</td>
+            <td>否</td>
+        </tr>
+        <tr>
+            <td>linkedPickers</td>
+            <td>
+                联动时间限制。</br>
+                开始：linked-pickers="{结束时间的id: 'minDate'}"；</br>
+                结束：linked-pickers="{开始时间的id: 'maxDate'}"
+            </td>
+            <td>object</td>
+            <td>-</td>
+            <td>否</td>
+        </tr>
+        <tr>
+            <td>onChange</td>
+            <td>
+                时间发生变化的回调，发生在用户选择时间时
+            </td>
+            <td>function</td>
+            <td>-</td>
+            <td>否</td>
+        </tr>
+        <tr>
+            <td>pickerOption</td>
+            <td>
+                初始化函数参数。</br>
+                stepping:默认1，</br>
+                defaultDate：默认选中的时间</br>
+                <a href="http://eonasdan.github.io/bootstrap-datetimepicker/Options/" target="_blank" >更多配置，点击这里</a>
+            </td>
+            <td>object</td>
+            <td>-</td>
+            <td>否</td>
+        </tr>
+        </tbody>
+    </table>
+</section>

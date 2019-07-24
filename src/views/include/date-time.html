@@ -1,0 +1,22 @@
+<!-- sample start -->
+
+<div class="row">
+    <div class="col-sm-6 col-md-6">
+        <label class="col-sm-4 col-md-4 text-right">日期时间：</label>
+        <div class='col-sm-8 col-md-8'>
+            <div class='input-group date' id='datetimepicker1'>
+                <input type='text' class="form-control"
+                       ng-model="model.dateTime"
+                       date-time-picker="YYYY-MM-DD HH:mm"
+                       dialog-ctrl="dialogCtrlDateTime"/>
+                <span class="input-group-addon" ng-click="showDialogDateTime()">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+                <span class="input-group-addon" ng-if="model.dateTime"  ng-click="clearDateTime()">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sample end -->

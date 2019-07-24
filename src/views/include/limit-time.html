@@ -1,0 +1,17 @@
+<!-- sample start -->
+<div class="row">
+    <div class="col-sm-6 col-md-6">
+        <label class="col-sm-4 col-md-4 text-right">最小，最大日期限制：</label>
+        <div class='col-sm-8 col-md-8'>
+            <div class='input-group date' id='datetimepicker1'>
+                <input type='text' class="form-control"
+                       ng-model="model.limitTime"
+                       date-time-picker="YYYY-MM-DD"
+                       dialog-ctrl="dialogCtrlLimit"
+                       min-date = "limit.testMinDate"
+                       max-date="limit.testMaxDate"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sample end -->
